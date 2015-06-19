@@ -36,6 +36,12 @@ hr {
 }
 
 /* Navbar */
+@media (max-width: 767px) {
+    .hide-class{
+        display: none;
+    }
+}
+
 .navbar-default {
 	background-color: transparent;
 	border-color: transparent;
@@ -49,7 +55,7 @@ hr {
 	font-family: 'Oswald', sans-serif;
 	font-size: 30px;
 	padding-left: 50px;
-	padding-top: 50px;
+	padding-top: 5%;
 	-moz-transition: 0.5s;
 	-ms-transition: 0.5s;
 	transition: 0.5s;
@@ -193,6 +199,12 @@ header .header-content .header-content-inner p {
 }
 
 /* Sobre */
+@media (max-width: 767px) {
+    #sobre > .testeheight {
+        height: 870px;
+    }
+}
+
 .sobre-size {
 	width: 300px;
 }
@@ -245,6 +257,11 @@ header .header-content .header-content-inner p {
 
 
 /* Portfolio */
+@media (max-width: 767px) {
+    #portfolio > .container-fluid > .row > .hide-class {
+        display: none;
+    }
+}
 
 #portfolio .portfolio-item {
     right: 0;
@@ -359,6 +376,12 @@ header .header-content .header-content-inner p {
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
+    background-color: #fff;
+    opacity: 0.9;
+}
+
+.modal-body {
+    background-color: #fff;
 }
 
 .portfolio-modal .modal-content h2 {
@@ -396,10 +419,6 @@ header .header-content .header-content-inner p {
     cursor: pointer;
 }
 
-.portfolio-modal .close-modal:hover {
-    opacity: .3;
-}
-
 .portfolio-modal .close-modal .lr {
     z-index: 1051;
     width: 1px;
@@ -426,4 +445,63 @@ header .header-content .header-content-inner p {
     opacity: 0;
 }
 
+.modal-title {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 25px;
+    color: #000;
+    padding-top: 10px;
+}
 
+.modal-header > hr {
+    max-width: 200px;
+    border-color: #000;
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+}
+
+.cortina {
+    height: 350px; 
+    background-image: url('../img/cortina.jpg');    
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
