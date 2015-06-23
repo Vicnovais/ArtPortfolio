@@ -25,6 +25,52 @@ hr {
 	color: #C2185B;
 }
 
+.text-modal {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    color: #C2185B;
+    padding-left: 20px;
+    padding-top: 10px;    
+}
+
+.text {
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 19px;
+    padding-left: 10px;
+}
+
+.text-modal-desc {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 18px;
+    padding-top: 15px;
+    padding-left: 27px;
+}
+
+.text-modal-director {    
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    padding-top: 15px;
+    padding-left: 10%;
+    color: #000;
+    display: inline-block;
+}
+
+.text-fjalla {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 18px;
+    padding-left: 5px;
+    display: inline-block;
+}
+
+.black {
+    color: #000;
+}
+
+.pink {
+    color: #C2185B;
+}
+
 .vertical-line{
   margin-top: 60px;
   width: 1px; /* Line width */
